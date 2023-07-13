@@ -128,7 +128,7 @@ namespace FluentResults
         /// <param name="action">Action that may fail.</param>
         public Result Bind(Func<Result> action)
         {
-            var result = new Result();
+            Result result = new Result();
             result.WithReasons(Reasons);
             
             if (IsSuccess)
